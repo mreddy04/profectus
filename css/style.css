@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans', helvetica, arial, sans;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #eee !important;
+}
+
+#login-form {
+  padding: 20px;
+  min-width: 320px;
+  max-width: 475px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px #888885;
+}
+
+
+#login-form input {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+    margin-top: 1em;
+    padding: .5em 0;
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 1.25em;
+    color: #757575;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form .btn {
+  display: inline-block;
+  padding: .5em 2em;
+  margin-right: .5em;
+  background-color: #2185d0;
+  color: #fff;
+  text-shadow: none;
+  background-image: none;
+  border-style: none;
+}
+#login-form .btn:disabled{
+  opacity: 0.5;
+}
+
+#login-form .btn:hover {
+  background: #1fb5bf;
+}
+
+#login-form .text-incorrect,
+.contactForm .text-incorrect {
+  color: red;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link.logout-btn {
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactDetails {
+  margin-top: 20px;
+}
+
+.contactForm {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contactForm input[type=text],
+.contactForm input[type=email],
+.contactForm textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contactForm input[type=submit] {
+    margin-top: 20px;
+    background-color: #2185d0;
+    color: white;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactForm input[type=submit]:hover {
+    background-color: #1fb5bf;
+}
+
+.contactForm input[type=submit]:disabled{
+  opacity: 0.5;
+}
+
+.ThankyouText {
+  margin-top: 60px;
+}
+.ThankyouText .jumbotron {
+  background-color: #fff;
+  height: 800px;
+}
+.ThankyouText .jumbotron div {
+  margin-top: 100px;
+  text-align: center;
+}
+.ThankyouText .jumbotron div h1 {
+  color: green;
+}
+.ThankyouText .jumbotron div p {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+}
+.ThankyouText .jumbotron .contactLink {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+#ChartsArea {
+  margin: 15px;
+}
+
+#ChartsArea .col-md-6 .tile,
+#VideosArea .col-md-12 .tile {
+  background-color: #fff;
+}
+#ChartsArea .col-md-6 .tile h6 {
+  border-bottom: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#VideosArea .col-md-12 .tile h5 {
+ padding: 10px 0 0 10px;
+}
+
+.center .pagination {
+  padding-left: 100px;
+  margin: 10px;
+}
+
+.pagination li a {
+    color: #2185d0;
+    float: left;
+    padding: 5px 15px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li.active a {
+    background-color: #2185d0;
+    color: white;
+    border: 1px solid #2185d0;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.center {
+    text-align: center;
+}

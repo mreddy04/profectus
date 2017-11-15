@@ -1,0 +1,49 @@
+<div class="col-md-12">
+    <div ng-include="'partials/navbar.html'"></div>
+</div>
+<div class="col-md-12" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="ChartsArea">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="tile">
+                            <h6>Bar Chart</h6>
+                            <div id="columnHighChart">
+                                <hc-chart options="chartOptions">Placeholder for generic chart</hc-chart>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tile">
+                            <h6> Donut Chart</h6>
+                            <div id="donutHighChart">
+                                <hc-chart title="Browser usage" options="donutChartOptions">Placeholder for pie chart</hc-chart>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="VideosArea">
+                <div class="col-md-12">
+                    <div class="tile">
+                        <h5>Videos</h5>
+                        <iframe id="myIframe" width="100%" height="300px"></iframe>
+                        <div style="height: 50px">
+                            <div class="center">
+                            <ul class="pagination">
+                                <li><a ng-click="preVideo()">Previous</a></li>
+                                <li ng-repeat="i in pages" ng-class="{'active': i === currentVideo + 1 }"><a ng-click="getvideo(i)">{{i}}</a></li>
+                                <li><a ng-click="nextvideo()">Next</a></li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" id="twitterTimeline">
+            <a class="twitter-timeline" href="https://twitter.com/BCCI?ref_src=twsrc%5Etfw">Tweets by BCCI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>

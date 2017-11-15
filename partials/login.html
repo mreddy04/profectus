@@ -1,0 +1,23 @@
+<div id="login-form" class="col-md-12">
+    <h3>Please Sign In</h3>
+    <form ng-submit="formSubmit()" name="LoginForm" class="form" novalidate>
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" ng-model="username" placeholder="username" required/>
+                <span style="color:red" ng-show="LoginForm.username.$dirty && LoginForm.username.$invalid">
+                  <span class="text-incorrect" ng-show="LoginForm.username.$error.required">Username is required.</span>
+                </span>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" ng-model="password" placeholder="password" required/>
+                <span style="color:red" ng-show="LoginForm.password.$dirty && LoginForm.password.$invalid">
+                  <span class="text-incorrect" ng-show="LoginForm.password.$error.required">Password is required.</span>
+                </span>
+            </div>
+            <div class="text-incorrect ng-binding">{{error}}</div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success" ng-disabled=!LoginForm.$valid>Sign In</button>
+            </div>
+        </div>
+    </form>
+</div>
