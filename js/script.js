@@ -8,7 +8,7 @@
       });
     
       if(!LoginService.isAuthenticated()) {
-        $state.transitionTo('login');
+        $state.go('login');
       }
   });
 
@@ -52,7 +52,7 @@
         $scope.error = '';
         $scope.username = '';
         $scope.password = '';
-        $state.transitionTo('home');
+        $state.go('home');
       } else {
         $scope.error = "Incorrect username/password !";
       }   
@@ -222,8 +222,8 @@
   // });
 
   app.factory('LoginService', function() {
-    var admin = 'a';
-    var pass = 'a';
+    var admin = 'admin';
+    var pass = 'pass';
     var isAuthenticated = false;
     
     return {
